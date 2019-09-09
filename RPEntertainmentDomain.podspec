@@ -38,5 +38,9 @@ Pod::Spec.new do |spec|
 
 
   spec.requires_arc = true
+  spec.swift_versions = "5.0.1"
 
 end
+
+# 
+# pod repo push RPEntertainmentDomainSpec RPEntertainmentDomain.podspec --allow-warnings --private --verbose
