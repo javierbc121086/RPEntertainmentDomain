@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "RPEntertainmentDomain"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "Dependencia encargada de contener la definicion del gegocio Rappi Entretainment"
   
 
