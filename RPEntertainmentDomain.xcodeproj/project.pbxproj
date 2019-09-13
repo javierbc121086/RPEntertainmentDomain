@@ -10,10 +10,8 @@
 		12B994102325CB2A006A7038 /* RPEntertainmentDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B994062325CB29006A7038 /* RPEntertainmentDomain.framework */; };
 		12B994152325CB2A006A7038 /* RPEntertainmentDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B994142325CB2A006A7038 /* RPEntertainmentDomainTests.swift */; };
 		12B994172325CB2A006A7038 /* RPEntertainmentDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 12B994092325CB29006A7038 /* RPEntertainmentDomain.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		12E551422326F19C002DAA64 /* RPEMovieResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E5513E2326F19C002DAA64 /* RPEMovieResponseEntity.swift */; };
-		12E551432326F19C002DAA64 /* RPETvResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E5513F2326F19C002DAA64 /* RPETvResponseEntity.swift */; };
-		12E551442326F19C002DAA64 /* RPETvEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E551402326F19C002DAA64 /* RPETvEntity.swift */; };
-		12E551452326F19C002DAA64 /* RPEMovieEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E551412326F19C002DAA64 /* RPEMovieEntity.swift */; };
+		450C35EBC986480DF18B7ADA /* RPEMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450C3859D7108F0B966324E6 /* RPEMovieModel.swift */; };
+		450C3EE77A47532A9FF2D6FA /* RPETvModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450C3AB12B588E3869E33F83 /* RPETvModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,10 +31,8 @@
 		12B9940F2325CB2A006A7038 /* RPEntertainmentDomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPEntertainmentDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12B994142325CB2A006A7038 /* RPEntertainmentDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPEntertainmentDomainTests.swift; sourceTree = "<group>"; };
 		12B994162325CB2A006A7038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12E5513E2326F19C002DAA64 /* RPEMovieResponseEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPEMovieResponseEntity.swift; sourceTree = "<group>"; };
-		12E5513F2326F19C002DAA64 /* RPETvResponseEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPETvResponseEntity.swift; sourceTree = "<group>"; };
-		12E551402326F19C002DAA64 /* RPETvEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPETvEntity.swift; sourceTree = "<group>"; };
-		12E551412326F19C002DAA64 /* RPEMovieEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPEMovieEntity.swift; sourceTree = "<group>"; };
+		450C3859D7108F0B966324E6 /* RPEMovieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPEMovieModel.swift; sourceTree = "<group>"; };
+		450C3AB12B588E3869E33F83 /* RPETvModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPETvModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +75,9 @@
 		12B994082325CB29006A7038 /* RPEntertainmentDomain */ = {
 			isa = PBXGroup;
 			children = (
-				12E5513C2326F19C002DAA64 /* Entity */,
 				12B994092325CB29006A7038 /* RPEntertainmentDomain.h */,
 				12B9940A2325CB29006A7038 /* Info.plist */,
+				450C3ED4728A4C9CEA444396 /* Model */,
 			);
 			path = RPEntertainmentDomain;
 			sourceTree = "<group>";
@@ -95,23 +91,13 @@
 			path = RPEntertainmentDomainTests;
 			sourceTree = "<group>";
 		};
-		12E5513C2326F19C002DAA64 /* Entity */ = {
+		450C3ED4728A4C9CEA444396 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				12E5513D2326F19C002DAA64 /* Response */,
-				12E551402326F19C002DAA64 /* RPETvEntity.swift */,
-				12E551412326F19C002DAA64 /* RPEMovieEntity.swift */,
+				450C3AB12B588E3869E33F83 /* RPETvModel.swift */,
+				450C3859D7108F0B966324E6 /* RPEMovieModel.swift */,
 			);
-			path = Entity;
-			sourceTree = "<group>";
-		};
-		12E5513D2326F19C002DAA64 /* Response */ = {
-			isa = PBXGroup;
-			children = (
-				12E5513E2326F19C002DAA64 /* RPEMovieResponseEntity.swift */,
-				12E5513F2326F19C002DAA64 /* RPETvResponseEntity.swift */,
-			);
-			path = Response;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,10 +208,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12E551422326F19C002DAA64 /* RPEMovieResponseEntity.swift in Sources */,
-				12E551442326F19C002DAA64 /* RPETvEntity.swift in Sources */,
-				12E551432326F19C002DAA64 /* RPETvResponseEntity.swift in Sources */,
-				12E551452326F19C002DAA64 /* RPEMovieEntity.swift in Sources */,
+				450C3EE77A47532A9FF2D6FA /* RPETvModel.swift in Sources */,
+				450C35EBC986480DF18B7ADA /* RPEMovieModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
