@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "RPEntertainmentDomain"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "Dependencia encargada de contener la definicion del gegocio Rappi Entretainment"
   
 
@@ -37,3 +37,5 @@ end
 
 # 
 # pod repo push RPEntertainmentDomainSpec RPEntertainmentDomain.podspec --allow-warnings --private --verbose
+# git tag -a 0.0.4 -m "Pod V0.0.4"
+# git push --tags

@@ -10,6 +10,7 @@
 		12B994102325CB2A006A7038 /* RPEntertainmentDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B994062325CB29006A7038 /* RPEntertainmentDomain.framework */; };
 		12B994152325CB2A006A7038 /* RPEntertainmentDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B994142325CB2A006A7038 /* RPEntertainmentDomainTests.swift */; };
 		12B994172325CB2A006A7038 /* RPEntertainmentDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 12B994092325CB29006A7038 /* RPEntertainmentDomain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12DB5D3B23302D0D0064FCBC /* RPEHttpRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB5D3A23302D0D0064FCBC /* RPEHttpRequestType.swift */; };
 		450C35EBC986480DF18B7ADA /* RPEMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450C3859D7108F0B966324E6 /* RPEMovieModel.swift */; };
 		450C3EE77A47532A9FF2D6FA /* RPETvModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450C3AB12B588E3869E33F83 /* RPETvModel.swift */; };
 /* End PBXBuildFile section */
@@ -31,6 +32,7 @@
 		12B9940F2325CB2A006A7038 /* RPEntertainmentDomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPEntertainmentDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12B994142325CB2A006A7038 /* RPEntertainmentDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPEntertainmentDomainTests.swift; sourceTree = "<group>"; };
 		12B994162325CB2A006A7038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12DB5D3A23302D0D0064FCBC /* RPEHttpRequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPEHttpRequestType.swift; sourceTree = "<group>"; };
 		450C3859D7108F0B966324E6 /* RPEMovieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPEMovieModel.swift; sourceTree = "<group>"; };
 		450C3AB12B588E3869E33F83 /* RPETvModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPETvModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,9 +77,10 @@
 		12B994082325CB29006A7038 /* RPEntertainmentDomain */ = {
 			isa = PBXGroup;
 			children = (
+				12DB5D3923302CFF0064FCBC /* Type */,
+				450C3ED4728A4C9CEA444396 /* Model */,
 				12B994092325CB29006A7038 /* RPEntertainmentDomain.h */,
 				12B9940A2325CB29006A7038 /* Info.plist */,
-				450C3ED4728A4C9CEA444396 /* Model */,
 			);
 			path = RPEntertainmentDomain;
 			sourceTree = "<group>";
@@ -89,6 +92,14 @@
 				12B994162325CB2A006A7038 /* Info.plist */,
 			);
 			path = RPEntertainmentDomainTests;
+			sourceTree = "<group>";
+		};
+		12DB5D3923302CFF0064FCBC /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				12DB5D3A23302D0D0064FCBC /* RPEHttpRequestType.swift */,
+			);
+			path = Type;
 			sourceTree = "<group>";
 		};
 		450C3ED4728A4C9CEA444396 /* Model */ = {
@@ -209,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				450C3EE77A47532A9FF2D6FA /* RPETvModel.swift in Sources */,
+				12DB5D3B23302D0D0064FCBC /* RPEHttpRequestType.swift in Sources */,
 				450C35EBC986480DF18B7ADA /* RPEMovieModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,7 +378,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RPEntertainmentDomain/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,7 +404,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RPEntertainmentDomain/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -20,4 +20,33 @@ public struct RPETvModel {
     public var voteAverage: Double
     public var overview: String
     public var posterPath: String
+    
+    public init (id: Int,
+                 originalName: String,
+                 genreIds: [Int],
+                 name: String,
+                 popularity: Double,
+                 originCountry: [String],
+                 voteCount: Int,
+                 firstAirDate: String,
+                 backdropPath: String,
+                 originalLanguage: String,
+                 voteAverage: Double,
+                 overview: String,
+                 posterPath: String
+    ) {
+        self.id                 = id
+        self.originalName       = originalName
+        self.genreIds           = genreIds
+        self.name               = name
+        self.popularity         = popularity
+        self.originCountry      = originCountry
+        self.voteCount          = voteCount
+        self.firstAirDate       = firstAirDate
+        self.backdropPath       = backdropPath
+        self.originalLanguage   = originalLanguage
+        self.voteAverage        = voteAverage
+        self.overview           = overview
+        self.posterPath         = posterPath
+    }
 }
